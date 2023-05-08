@@ -10,7 +10,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: linear-gradient(to bottom right, #ff6767 0%, #de1b1b 40%);
+  background-image:repeating-linear-gradient(to bottom right, #ff6767 0%, #de1b1b 40%);
   animation: float 6s linear infinite alternate;
 }
 
