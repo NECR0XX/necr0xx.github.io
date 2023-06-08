@@ -1,0 +1,150 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: Eras ITC;
+  align-items: center;
+  justify-content: center;
+  height: 100vh auto;
+  background-image:linear-gradient(to bottom right, rgb(0, 18, 61) 0%, #000000 70%);
+}
+
+section {
+  padding: 45px;
+  background-color: rgb(245, 245, 245);
+  width: 500px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  box-shadow: 2px 15px 20px rgba(8, 8, 8, 0.4);
+}
+
+header img {
+  width: 140px;
+}
+
+header h3{
+  color: #000c92;
+  font-size: 1.35rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 25px;
+}
+
+main a {
+  background: #000537;
+  padding: 15px 0;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  box-shadow: 10px 10px #000000;
+  transition: all .5s ease-in-out;
+}
+
+main a:hover {
+  opacity: .85;
+}
+
+.footer {
+  top: 720px;
+  position: absolute;
+  bottom: 10px;
+  color: black;
+  font-size: 1rem;
+}
+
+@media (max-width: 520px) {
+  section{
+    width: 90%;
+    padding: 30px;
+  }
+  header img{
+    width: 100px;
+  }
+  header h3{
+    font-size: 1.3rem;
+  }
+  main{
+    gap: 15px;
+  }
+  main a{
+    padding: 10px 0;
+    box-shadow: 5px 5px #2638ff;
+  }
+}
+
+.image-container {
+  position: relative;
+  height: 300px; /* ajuste a altura conforme necessário */
+}
+
+.floating-image {
+  width: 360px;
+  position: absolute;
+  top: 350px;
+  left: 150px;
+  transform: translate(-50%, -50%);
+  animation: float 3.85s infinite alternate;
+}
+.floating-image2 {
+  width: 410px;
+  position: absolute;
+  top: 370px;
+  right: 390px;
+  transform: translate(-50%, -60%);
+  animation: float 4.5s infinite alternate;
+}
+.floating-image3 {
+  width: 310px;
+  position: absolute;
+  top: 130px;
+  right: 300px;
+  transform: translate(-50%, -60%);
+  animation: float 3s infinite alternate;
+}
+.floating-image5 {
+  width: 240px;
+  position: absolute;
+  top: 160px;
+  left: 310px;
+  transform: translate(-50%, -60%);
+  animation: float 2.85s infinite alternate;
+}
+.floating-image6 {
+  width: 200px;
+  position: absolute;
+  top: -10px;
+  right: 540px;
+  transform: translate(-20%, -60%);
+  animation: float 1.5s infinite alternate;
+}
+.floating-image7 {
+  width: 240px;
+  position: absolute;
+  top: 10px;
+  left: 160px;
+  transform: translate(-50%, -60%);
+  animation: float 8s infinite alternate;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    transform: translate(-50%, -90%); /* ajuste o valor para controlar a altura da animação */
+  }
+}
